@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700');
+
+*{
+  transition: 0.2s ease;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  -moz-transition: 0.2s ease;
+  outline: none
+}
+p{
+font-family: "Raleway";
+font-style: normal;
+color: #555;
+line-height: 1.6em;
+}
+
+#whatIsDwp .images{
+background:url("../images/couple_bnw.webp");
+display: block;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+@keyframes imageFade {
+0% {
+opacity:1
+}
+50%{
+opacity:0
+}
+}
+#whatIsDwp .images img{
+animation: imageFade 7s ease infinite
+}
+
+body{
+font-family: "Raleway", sans-serif;
+
+}
+h1{
+font-weight: bold;
+color: #0f0f0f;
+}
+#logo{
+position: absolute;
+top:1em;
+left:1em;
+width:7em;
+z-index:2
+}
+nav{
+display:none;
+}
+img{
+max-width:100vw
+}
+#intro_video {
+width:100vw;
+}
+
+#intro_video video, video{
+width:100%;
+/* display: none; */
+}
+#intro_video div{
+height:169.9vw;
+width:100%;
+background: linear-gradient(to top, rgba(0,0,0,0.6) 30%, transparent 50%, transparent 60%);
+display:inline-flex;
+padding-bottom: 2em;
+position: absolute;
+top:0;
+flex-wrap: wrap;
+align-items:flex-end;
+align-content:flex-end;
+}
+
+#intro_video div h1, #intro_video div p{
+color:white;
+padding-top:1em;
+align-self:flex-end
+
+}
+
+#intro_video div h1::before{
+content:"";
+width:1em;
+height:5px;
+background:white;
+display:block;
+margin-bottom: .3em
+}
+
+#intro_video div h1, h2{
+font-size:2em;font-weight:600;
+margin: auto 1em;
+
+}
+
+#intro_video div p{
+font-size:1.2em;padding:1em 1.6em
+}
+
+section h2, article h2, footer h2{
+margin:1em;
+color:#555;
+}
+section h2::before, article h2::before, footer h2::before{
+content:"";
+width:1em;
+height:5px;
+background:#555;
+display:block;
+margin-bottom: .3em
+}
+footer h2{
+padding-top:1em
+}
+
+a.button{
+background:#b5cfca;
+color:white;
+text-transform: uppercase;
+text-decoration: none;
+padding:1em;
+border-radius: 100px;
+display: block;
+margin:auto 2em;
+text-align: center;
+font-size: large
+}
+a.button:hover{
+background:#A2BAB5
+}
+
+article p:not(.onvideo){
+font-size:1.2em;
+margin: auto 1.6em
+}
+article:nth-child(odd){
+background:#b5cfca
+}
+
+article:nth-child(odd) h2{
+padding-top:1em
+}
+article:nth-child(odd) p{
+padding: 1.6em;
+margin:0
+}
+
+article div.images{
+margin:2em;
+}
+article div.images img{
+max-width:100%
+}
+
+article#iAm .images img{
+display:block;
+background:rgba(0,0,0,0.4) url(../images/personal_small.jpg);
+background-position: center;
+background-size: cover;
+color:white;
+text-transform: uppercase;
+font-weight: bold;
+position: relative;
+align-items: center;
+justify-content: center;
+-webkit-filter: blur(5px); /* Safari */
+filter: blur(5px);
+opacity:0.6;
+transform: scale(1.2);
+
+}
+
+article#iAm .images picture::after{
+position: absolute;
+top:50%;
+left:50%;
+transform: translateX(-50%) translateY(-50%);
+color:white;
+text-transform: uppercase;
+font-weight: bold;
+}
+article#iAm .emotional picture::after{
+content:"emotional";}
+article#iAm .realistic picture::after{
+  content:"realistic";}
+  article#iAm .personal picture::after{
+    content:"personal";}
+
+
+.imgGreen img{
+margin-bottom:2em
+}
+article#iAm .images span
+{
+position: relative;
+color:white;
+background:black;
+display:block;
+height:100%;
+z-index:9;
+overflow: hidden;
+
+}
+article#iAm .images img:hover{
+-webkit-filter: blur(0px); /* Safari */
+filter: blur(0px);
+opacity:1;
+transform: scale(1);
+}
+
+article#iAm .images picture:hover::after{
+opacity:0
+}
+
+article#stories picture::after{
+background: url(../images/icons/sound_white.svg);
+background-size:3em;
+background-repeat: no-repeat;
+background-position: center center;
+content:"";
+display: block;
+width:100%;
+height:100px;
+position: absolute;
+left:0;
+margin-top:-13.5em  }
+
+
+
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+vertical-align: baseline;
+}
+
+@media all and (min-width: 576px) {
+
+#intro_video div{
+background:none;
+height:50vw;
+width:50vw  }
+#intro_video div h1, #intro_video div p{
+color:#555;
+}
+#intro_video div h1::before{
+background: #555
+}
+#whatIsDwp, #capturing, #iAm, #stories, footer{
+display: flex;
+flex-wrap: wrap;
+align-content: flex-start;
+justify-content: space-between;
+align-items: flex-start;
+padding-bottom:2em
+
+}
+footer{
+padding-bottom: 0
+}
+#whatIsDwp h2, #capturing h2, #stories h2, footer h2{
+width:100%;
+flex-grow: 2;
+}
+#whatIsDwp p, #whatIsDwp .images, #capturing p, #capturing video, footer a, footer video{
+width:40%;
+display:inline-block;
+align-self: flex-start;
+}
+#iAm div{
+margin: auto 2em;
+display: flex;
+justify-content: space-between;
+align-content: stretch;
+}
+#iAm .images{
+width:30%;
+margin:0
+}
+#stories .images{
+width:100%;
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+margin:auto 2em
+}
+#stories .images img, #stories .images picture{
+width:95%;
+margin:auto;
+position: relative;
+display: flex;
+height:100%;
+justify-content: space-between;
+margin:auto;
+align-self: stretch;
+}
+#stories .images picture:nth-child(2){
+text-align:right
+}
+article#stories picture::after{
+text-align: right;
+width:100%;
+margin:0;
+height:100%
+}
+article div.images{
+margin: 0 auto 0 2em
+}
+article:nth-child(odd) p{
+padding:0 1.6em
+}
+#capturing video{
+padding-right:2em;
+order:2
+}
+article:nth-child(odd) h2{
+padding-top:.6em
+}
+article h2{
+padding-top:0.5em
+}
+a.button{
+display: inline-block;
+}
+
+}
+
+@media all and (min-width:900px) {
+#whatIsDwp{
+margin-left:10%;
+width:80%
+}
+#capturing{
+width:80%;
+padding-left:10%
+}
+#iAm{
+width:80%;
+margin-left:10%
+}
+#stories{
+width:80%;
+padding-right:10%;
+margin-left:10%
+}
+footer{
+width:80%;
+margin-left:10%
+}
+#intro_video div{
+width:30vw;
+margin-left:10%
+}
+#intro_video div h1{
+font-size:3em;
+margin:auto 0.6em
+}
+.coverWhite{
+height:100%;
+width:90vw;
+position: fixed;
+top:0;
+right:-100%;
+bottom:0;
+background:linear-gradient(to left, white, transparent);
+z-index: 999;
+opacity:0;
+}
+nav{
+display:block;
+position: fixed;
+top:50%;
+transform: translateY(-50%);
+right:3%;
+text-align: right;
+z-index: 9999;
+padding:5em 0 5em 5em
+}
+nav ul{
+list-style-type: none;
+}
+nav ul li{
+pointer-events: none;
+position: sticky;
+right:-100%;
+display: block;
+
+}
+nav ul li a{
+position: fixed;
+right:-100%;
+}
+nav:hover ul li a{right:0;width:30em}
+nav ul li a span{
+opacity:0;
+color:#555;
+pointer-events: none;
+display:inline-block
+}
+nav:hover ul li a span{
+opacity:0.3;padding:.6em;margin:0;
+padding-right: 3em;
+pointer-events: all;
+
+}
+nav:hover ul li{
+pointer-events: all;
+right:3%;
+
+
+}
+nav:hover + .coverWhite{
+opacity: 1;
+right:0
+}
+nav ul li::after{
+content:"—";
+color:#555;
+display: inline-block;
+position: relative;
+right:3%;
+margin-top:.6em;
+margin-bottom: .6em;
+}
+
+nav ul li:hover a span{
+opacity: 1;
+font-weight:bold;
+}
+
+
+}
+
+.soundPicSize{
+transform: scale(1.2);
+z-index: 99
+}
+
+@keyframes jump {
+0%{
+transform: scale(1)
+}
+70%{
+transform: scale(1.3)
+}
+100%{
+transform: scale(1)
+}
+}
+.picWithSound:hover::after{
+animation: jump .6s ease infinite
+}
